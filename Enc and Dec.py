@@ -9,7 +9,7 @@ def enc(all,key):
     print(cip_text)
 
 def dec(all,key):
-    cip_text= input("Enter the message")
+    cip_text= input("Enter the ciphered message")
     pl_text=""
     for letter in cip_text:
         index = key.index(letter)
