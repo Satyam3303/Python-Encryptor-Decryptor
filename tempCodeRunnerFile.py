@@ -1,0 +1,1 @@
+f = open('D:\Important Stuffs\Projects\Python Encryptor Decryptor\Python-Encryptor-Decryptor\hello.txt','w')
