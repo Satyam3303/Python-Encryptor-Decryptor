@@ -13,6 +13,7 @@ def enc(all,key,pazz):
     f.write(pazz)
     f.close()
     print(cip_text)
+    Main()
 
 def dec(all,key,pazz):
     f = open('D:\Important Stuffs\Projects\Python Encryptor Decryptor\Python-Encryptor-Decryptor\hello.txt','r')
@@ -28,9 +29,11 @@ def dec(all,key,pazz):
         f.write(pl_text)
         f.close()
         print(pl_text)
+        Main()
     
     else:
         print("Wrong Password")
+        Main()
 
 
 
