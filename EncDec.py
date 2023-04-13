@@ -1,14 +1,14 @@
 import string
 
 def enc(all,key,pazz):
-    f = open('D:\Important Stuffs\Projects\Python Encryptor Decryptor\Python-Encryptor-Decryptor\hello.txt','r')
+    f = open('hello.txt','r')
     pl_text = f.read()
     f.close()
     cip_text=""
     for letter in pl_text:
         index = all.index(letter)
         cip_text += key[index]
-    f = open('D:\Important Stuffs\Projects\Python Encryptor Decryptor\Python-Encryptor-Decryptor\hello.txt','w')
+    f = open('hello.txt','w')
     f.write(cip_text)
     f.write(pazz)
     f.close()
@@ -16,7 +16,7 @@ def enc(all,key,pazz):
     Main()
 
 def dec(all,key,pazz):
-    f = open('D:\Important Stuffs\Projects\Python Encryptor Decryptor\Python-Encryptor-Decryptor\hello.txt','r')
+    f = open('hello.txt','r')
     cip_text = f.read()
     f.close()
     if pazz in cip_text:
@@ -25,7 +25,7 @@ def dec(all,key,pazz):
         for letter in cip_text:
             index = key.index(letter)
             pl_text += all[index]
-        f = open('D:\Important Stuffs\Projects\Python Encryptor Decryptor\Python-Encryptor-Decryptor\hello.txt','w')
+        f = open('hello.txt','w')
         f.write(pl_text)
         f.close()
         print(pl_text)
